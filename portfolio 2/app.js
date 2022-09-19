@@ -30,8 +30,8 @@ document.getElementById('button2').onclick = ()=>{
 
 
 var _CONTENT = [ 
-	"world", 
-	"developers", 
+	"WORLD!", 
+	"DEVELOPERS!", 
 ];
 
 // Current sentence being processed
@@ -63,8 +63,8 @@ function Type() {
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
+			_INTERVAL_VAL = setInterval(Delete, 80);
+		}, 2000);
 	}
 }
 
@@ -96,4 +96,4 @@ function Delete() {
 }
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
+_INTERVAL_VAL = setInterval(Type, 200);
