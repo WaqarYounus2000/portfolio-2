@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    user-select: none;
     padding: 0px;
     overflow: hidden;
     font-family: 'Varela Round', sans-serif;
@@ -138,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(21, 137, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
@@ -146,6 +147,26 @@ body {
     overflow: hidden;
 }
 
+/* .borderhovereffect:after{
+    border-bottom: 1px solid red;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    transform: scaleX(0);
+    transition:  0.25s ease-out;
+    
+}
+.borderhovereffect:hover:after {
+    transform: scaleX(1);
+} */
+
+
+.headingh4info{
+    padding: 0px;
+    margin: 0px;
+}
 
 .button2 {
     background-color: transparent;
@@ -270,6 +291,7 @@ body {
 
 .unorderlist {
     border-bottom: 2px solid white;
+    position:relative;
     padding: 2px;
 }
 
@@ -464,3 +486,15 @@ i {
 
 
 /* icons tyle finish///////////////////////////////////////////////////////////////// */
+
+
+/* ///////////////////// page 3 starts///////////////////////////////////////////////// */
+
+
+.page3{
+    height: 0vh;
+    width: 0%;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: red;
+}
