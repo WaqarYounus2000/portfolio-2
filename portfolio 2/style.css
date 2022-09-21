@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.6s;
     position: relative;
     flex-direction: column;
 }
@@ -47,6 +48,7 @@ body {
 .button1 {
     background-color: transparent;
     border: none;
+    transition: all 0.6s;
     position: relative;
 
 }
@@ -130,6 +132,17 @@ body {
 }
 
 /* //////////////////////////////////////////////////////////////// page 1 fininshed */
+.page2maindiv {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.6s;
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(21, 137, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
+
+
+}
 
 .page2 {
     width: 100%;
@@ -139,10 +152,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     position: relative;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(21, 137, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
     transition: all 0.6s;
     overflow: hidden;
 }
@@ -163,7 +173,7 @@ body {
 } */
 
 
-.headingh4info{
+.headingh4info {
     padding: 0px;
     margin: 0px;
 }
@@ -171,9 +181,82 @@ body {
 .button2 {
     background-color: transparent;
     border: none;
-    position: relative;
+    }
+
+.downarrowdiv{
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
 
 }
+.basicinfodiv{
+    /* height: 25%; */
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infocard1{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width: 220px;
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skilldetail{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* padding: 2px; */
+    line-height: 1;
+}
+
+
+.skilldetail>li{
+    font-size: 0.8em;
+    list-style: none;
+    padding: 2px;
+    line-height: 1.2;
+}
+.edudetails>li{
+    font-size: 0.8em;
+    list-style: none;
+    padding: 4px;
+}
+.edudetails>li:nth-child(odd){
+    text-decoration: underline;
+    color: rgb(8, 0, 0);
+    color: #09344E;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.experiencedetail>li{
+    list-style: none;
+    padding: 5px;
+}
+.titles{
+    color: #09344E;
+    text-decoration: underline;
+}
+
+
+
+
+
 
 .downarrow {
     background-color: transparent;
@@ -200,21 +283,31 @@ body {
     position: absolute;
     left: -7px;
     bottom: 50px;
-    transform: all 0.5;
+    transition: all 0.5;
     border-radius: 5px;
 }
 
 .button2:hover:before {
     display: flex;
-    transform: all 0.5;
+    transition: all 0.5;
 }
 
 .page2_div2 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    transition: all 0.6;
+    overflow: hidden;
+}
+
+.sidebarforbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* border: 2px solid red; */
 }
 
 .aside1 {
@@ -225,18 +318,19 @@ body {
     justify-content: center;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     flex-direction: column;
+    overflow: hidden;
     align-items: center;
-    
+
 }
 
 .heading4 {
     line-height: 1;
+    font-weight: 100;
 }
 
 
 
 .pictureabout {
-    /* border: 2px solid rgb(236, 208, 49); */
     margin: 0px;
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     width: 180px;
@@ -252,7 +346,6 @@ body {
 }
 
 
-
 .section1 {
     padding-left: 10px;
     /* border: 2px solid rgb(230, 24, 10); */
@@ -263,6 +356,7 @@ body {
     align-items: center;
     flex-direction: column;
     color: white;
+    position: relative;
 
 }
 
@@ -291,7 +385,7 @@ body {
 
 .unorderlist {
     border-bottom: 2px solid white;
-    position:relative;
+    position: relative;
     padding: 2px;
 }
 
@@ -342,13 +436,14 @@ body {
 .aboutme {
     font-size: 50px;
     text-decoration: underline;
+    margin: 5px;
 
 }
 
 
 
 
-/* icons tyle startt///////////////////////////////////////////////////////////////// */
+/* icons style startt///////////////////////////////////////////////////////////////// */
 .main {
     display: flex;
     justify-content: center;
@@ -393,7 +488,7 @@ body {
 a {
     border-radius: 0;
     font-size: 15px;
-    height: 80px;
+    height: 55px;
     line-height: 60px;
     text-align: center;
     width: 60px;
@@ -411,9 +506,12 @@ a {
 }
 
 .instalist:hover {
-    background-color: #cb2027;
+    /* background-color: #cb2027; */
     border-width: 0;
     cursor: pointer;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
 .youtubelist:hover {
@@ -430,6 +528,12 @@ a {
 
 .linkedinlist:hover {
     background-color: #3b5998;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.githublist:hover {
+    background-color: #171515;
     border-width: 0;
     cursor: pointer;
 }
@@ -491,10 +595,76 @@ i {
 /* ///////////////////// page 3 starts///////////////////////////////////////////////// */
 
 
-.page3{
-    height: 0vh;
-    width: 0%;
-    border: 2px solid black;
+.page3 {
+    height: 100vh;
+    width: 0vw;
+    transition: all 0.6s;
+    /* transition: all 3s; */
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     overflow: hidden;
-    background-color: red;
+    display: flex;
+    justify-self: center;
+    
+}
+
+.page3aside {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    width: 5%;
+    /* border: 2px solid red; */
+    height: 100vh;
+
+}
+
+#sidearrow {
+
+    background-color: transparent;
+    border: none;
+}
+
+.leftbutton {
+
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+}
+
+.leftbutton:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+
+
+
+/* //////////////////////////// page 3 ///////////////////////////////////////////////////////////// */
+.page3div1{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.servicecards{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid rgb(31, 28, 28);
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    padding: 5px;
+}
+
+.myservices{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
 }
