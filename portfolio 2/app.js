@@ -119,3 +119,14 @@ document.getElementById('rightarrowID').onclick = () => {
 }
 
 
+
+
+// document.getElementsByClassName('asscard').onclick = ()=>{
+// 	document.getElementsByClassName('cardinfo').style.height = '140px';
+// 	document.getElementsByClassName('websiteimag').style.filter = 'blur(1px)';
+// 	console.log('hello krha hai')
+// }
+// document.getElementsByClassName('asscardID').onmouseleave = ()=>{
+// 	document.getElementsByClassName('imagesto').style.filter = 'blur(0px)';
+// 	document.getElementsByClassName('cardinfoID').style.height = '0px';
+// }

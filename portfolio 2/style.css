@@ -654,8 +654,8 @@ i {
 .servicecards{
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid rgb(31, 28, 28); */
     flex-direction: column;
     height: 285px;
@@ -681,6 +681,7 @@ i {
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .servicecardsicons1>i{
     padding: 5px;
@@ -705,5 +706,53 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     /* border: 2px solid red; */
 }
+
+.assignmentsdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid red;
+    height: 150px;
+}
+
+.asscard{
+    width: 100px;
+    height: 140px;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.websiteimagediv{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 140px;
+}
+.websiteimag{
+    width: 100px;
+    height: 140px;
+}
+.asscard:hover{
+    cursor: pointer;
+}
+
+
+.cardinfo{
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    background-color: #1F2125;
+    filter: opacity(0.9);
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+}
+
+.websiteimag:hover ~ .cardinfo{
+    height: 140px;
+}
+
