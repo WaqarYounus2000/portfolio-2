@@ -601,10 +601,11 @@ i {
     transition: all 0.6s;
     /* transition: all 3s; */
     background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     overflow: hidden;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     
 }
 
@@ -651,20 +652,58 @@ i {
 }
 
 .servicecards{
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid rgb(31, 28, 28);
+    /* border: 2px solid rgb(31, 28, 28); */
     flex-direction: column;
-    height: 250px;
+    height: 285px;
     width: 250px;
+    background-color: #1F2125;
+    border-radius: 10px;
     padding: 5px;
+    color: orange;
+}
+.servicecards:hover{
+    cursor: pointer;
+    background-color: #3e4044;
 }
 
 .myservices{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     
+}
+.servicecards>h2{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+.servicecardsicons1>i{
+    padding: 5px;
+}
+.servicecardsicons1{
+    width: 100%;
+    /* margin-top: 14px; */
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+.serviceIcons{
+    font-size: 48px;
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
 }
