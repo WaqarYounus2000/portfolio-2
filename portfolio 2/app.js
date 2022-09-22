@@ -121,12 +121,21 @@ document.getElementById('rightarrowID').onclick = () => {
 
 
 
-// document.getElementsByClassName('asscard').onclick = ()=>{
-// 	document.getElementsByClassName('cardinfo').style.height = '140px';
-// 	document.getElementsByClassName('websiteimag').style.filter = 'blur(1px)';
-// 	console.log('hello krha hai')
-// }
-// document.getElementsByClassName('asscardID').onmouseleave = ()=>{
-// 	document.getElementsByClassName('imagesto').style.filter = 'blur(0px)';
-// 	document.getElementsByClassName('cardinfoID').style.height = '0px';
-// }
+const card  = document.getElementsByClassName('asscard');
+for(let i=0;i<card.length;i++){
+
+	card[i].onmouseover = ()=>{
+		document.getElementsByClassName('cardinfo')[i].style.height = '140px';
+		document.getElementsByClassName('websiteimag')[i].style.filter = 'blur(1px)';
+
+		document.getElementsByClassName('asscard')[i].onmouseleave = ()=>{
+			document.getElementsByClassName('websiteimag')[i].style.filter = 'blur(0px)';
+			document.getElementsByClassName('cardinfo')[i].style.height = '0px';
+
+		
+		
+	}
+	
+}
+}
+

@@ -176,6 +176,8 @@ body {
 .headingh4info {
     padding: 0px;
     margin: 0px;
+    font-size: 0.8em;
+    font-weight: 400;
 }
 
 .button2 {
@@ -239,7 +241,7 @@ body {
 .edudetails>li:nth-child(odd){
     text-decoration: underline;
     color: rgb(8, 0, 0);
-    color: #09344E;
+    color: #03082a;
     font-size: 0.8em;
     font-weight: 800;
 }
@@ -249,7 +251,7 @@ body {
     padding: 5px;
 }
 .titles{
-    color: #09344E;
+    color: #03082a;
     text-decoration: underline;
 }
 
@@ -269,7 +271,7 @@ body {
     opacity: 1;
     content: "";
     transition: all 0.3s;
-
+    
 }
 
 .button2:before {
@@ -320,7 +322,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-
+    
 }
 
 .heading4 {
@@ -342,9 +344,12 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 90px;
-
+    
 }
-
+.uniintro{
+    font-size: 0.9em;
+    font-weight: 100;
+}
 
 .section1 {
     padding-left: 10px;
@@ -357,7 +362,7 @@ body {
     flex-direction: column;
     color: white;
     position: relative;
-
+    
 }
 
 .div1 {
@@ -371,7 +376,7 @@ body {
 }
 
 .name {
-
+    
     border-bottom: 2px solid white;
 }
 
@@ -714,11 +719,12 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 150px;
 }
 
 .asscard{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     width: 100px;
     height: 140px;
     /* border: 2px solid red; */
@@ -736,23 +742,42 @@ i {
 }
 .asscard:hover{
     cursor: pointer;
+    
 }
+/* .gifforcardinfo{
+    background-image: url('./images/click.gif');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 40px;
+    height: 40px;
 
+} */
 
+.anchorcardinfo{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.5;
+    
+    
+}
 .cardinfo{
     color: white;
     text-decoration: none;
-    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     background-color: #1F2125;
     filter: opacity(0.9);
     width: 100px;
-    height: 20px;
-    position: absolute;
+    height: 140px;
+    position: absolute;   
     bottom: 0px;
     left: -15px;
-}
-
-.websiteimag:hover ~ .cardinfo{
-    height: 140px;
 }
 
