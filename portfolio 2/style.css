@@ -611,6 +611,10 @@ i {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    /* position: sticky; left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-snap-align: start; */
     
 }
 
