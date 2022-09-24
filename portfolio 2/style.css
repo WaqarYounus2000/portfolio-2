@@ -141,6 +141,10 @@ body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(21, 137, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
 
+    /* position: sticky; left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-snap-align: end; */
 
 }
 
@@ -155,6 +159,11 @@ body {
     position: relative;
     transition: all 0.6s;
     overflow: hidden;
+/* 
+    position: sticky; right: 0%;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-snap-align: center; */
 }
 
 /* .borderhovereffect:after{
@@ -205,17 +214,31 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+.infocard1:hover{
+    cursor: pointer;
+    border-top: 3px solid #082B47;
+    /* background-color: #355b7a; */
+    /* transition: all 0.4s;
+    transform: rotateZ(360deg); */
+    
+    
+}
+
 
 .infocard1{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-sizing: border-box;
+    border-radius: 12px;
     width: 220px;
-    height: 280px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     align-items: center;
     flex-direction: column;
+    transition: all 4s;
+    opacity: 0;
 }
 
 .skilldetail{
@@ -226,7 +249,9 @@ body {
     line-height: 1;
 }
 
-
+.cardsicons1{
+    font-size: 18px;
+}
 .skilldetail>li{
     font-size: 0.8em;
     list-style: none;
@@ -302,6 +327,8 @@ body {
     flex-direction: row;
     transition: all 0.6;
     overflow: hidden;
+
+   
 }
 
 .sidebarforbutton {
@@ -611,10 +638,10 @@ i {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* position: sticky; left: 0;
+    position: sticky; left: 0;
     flex-shrink: 0;
     object-fit: cover;
-    scroll-snap-align: start; */
+    scroll-snap-align: start;
     
 }
 

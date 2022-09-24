@@ -14,7 +14,11 @@ var page2 = document.getElementById('page2ID');
 document.getElementById('button1').onclick = () => {
 	page1.style.height = '0vh';
 	page2.style.height = '100vh';
+	const loadedcard = document.getElementsByClassName('infocard1');
+	for(let i=0;i<4;i++){
+		loadedcard[i].style.opacity = "1";
 
+	}
 
 }
 
@@ -106,6 +110,7 @@ document.getElementById('sidearrow').onclick = () => {
 
 	document.getElementById('page2_div2ID').style.width = "0%";
 	document.getElementById('page3ID').style.width = "100%";
+	
 
 }
 
@@ -138,4 +143,5 @@ for(let i=0;i<card.length;i++){
 	
 }
 }
+
 
