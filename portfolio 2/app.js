@@ -130,7 +130,7 @@ const card  = document.getElementsByClassName('asscard');
 for(let i=0;i<card.length;i++){
 
 	card[i].onmouseover = ()=>{
-		document.getElementsByClassName('cardinfo')[i].style.height = '140px';
+		document.getElementsByClassName('cardinfo')[i].style.height = '200px';
 		document.getElementsByClassName('websiteimag')[i].style.filter = 'blur(1px)';
 
 		document.getElementsByClassName('asscard')[i].onmouseleave = ()=>{
