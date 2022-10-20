@@ -479,150 +479,150 @@ body {
 
 
 /* icons style startt///////////////////////////////////////////////////////////////// */
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #333;
-    
-}
-
-.unorderlist1 {
-    
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-
-}
-
-.CL {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.main ul {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main ul li {
-    /* border: 2px solid red; */
-    list-style: none;
-    width: 55px !important;
-
-}
-
-a {
-    border-radius: 0;
-    font-size: 15px;
-    height: 55px;
-    line-height: 60px;
-    text-align: center;
-    width: 60px;
-    overflow: hidden;
-    margin: 0 15px;
-    transition: all 0.3s ease;
-}
-
-.fblist:hover {
-    background-color: #3b5998;
-    border-width: 0;
-    cursor: pointer;
-    transition: ease 0.3s;
-
-}
-
-.instalist:hover {
-    /* background-color: #cb2027; */
-    border-width: 0;
-    cursor: pointer;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
-}
-
-.youtubelist:hover {
-    background-color: #cb2027;
-    border-width: 0;
-    cursor: pointer;
-}
-
-.twitterlist:hover {
-    background-color: #00aced;
-    border-width: 0;
-    cursor: pointer;
-}
-
-.linkedinlist:hover {
-    background-color: #3b5998;
-    border-width: 0;
-    cursor: pointer;
-}
-
-.githublist:hover {
-    background-color: #171515;
-    border-width: 0;
-    cursor: pointer;
-}
-
-
-i {
-    font-size: 22px;
-    color: white;
-    animation: toTopFromBottom12 0.3s forwards;
-}
-
-.main>ul>li:hover i {
-    animation: toTopFromBottom 0.3s forwards;
-    cursor: pointer;
-}
-
-
-
-
-
-@keyframes toTopFromBottom {
-    49% {
-        transform: translateY(-100%)
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+        
     }
 
-    50% {
-        opacity: 0;
-        transform: translateY(100%)
+    .unorderlist1 {
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
     }
 
-    51% {
-        opacity: 1
+    .CL {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .main ul {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main ul li {
+        /* border: 2px solid red; */
+        list-style: none;
+        width: 55px !important;
+
+    }
+
+    a {
+        border-radius: 0;
+        font-size: 15px;
+        height: 55px;
+        line-height: 60px;
+        text-align: center;
+        width: 60px;
+        overflow: hidden;
+        margin: 0 15px;
+        transition: all 0.3s ease;
+    }
+
+    .fblist:hover {
+        background-color: #3b5998;
+        border-width: 0;
+        cursor: pointer;
+        transition: ease 0.3s;
+
+    }
+
+    .instalist:hover {
+        /* background-color: #cb2027; */
+        border-width: 0;
+        cursor: pointer;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    }
+
+    .youtubelist:hover {
+        background-color: #cb2027;
+        border-width: 0;
+        cursor: pointer;
+    }
+
+    .twitterlist:hover {
+        background-color: #00aced;
+        border-width: 0;
+        cursor: pointer;
+    }
+
+    .linkedinlist:hover {
+        background-color: #3b5998;
+        border-width: 0;
+        cursor: pointer;
+    }
+
+    .githublist:hover {
+        background-color: #171515;
+        border-width: 0;
+        cursor: pointer;
     }
 
 
-}
-
-@keyframes toTopFromBottom12 {
-    49% {
-        opacity: 0;
-        transform: translateY(100%)
+    i {
+        font-size: 22px;
+        color: white;
+        animation: toTopFromBottom12 0.3s forwards;
     }
 
-    50% {
-        transform: translateY(-100%)
-    }
-
-    51% {
-        opacity: 1
+    .main>ul>li:hover i {
+        animation: toTopFromBottom 0.3s forwards;
+        cursor: pointer;
     }
 
 
-}
+
+
+
+    @keyframes toTopFromBottom {
+        49% {
+            transform: translateY(-100%)
+        }
+
+        50% {
+            opacity: 0;
+            transform: translateY(100%)
+        }
+
+        51% {
+            opacity: 1
+        }
+
+
+    }
+
+    @keyframes toTopFromBottom12 {
+        49% {
+            opacity: 0;
+            transform: translateY(100%)
+        }
+
+        50% {
+            transform: translateY(-100%)
+        }
+
+        51% {
+            opacity: 1
+        }
+
+
+    }
 
 
 /* icons tyle finish///////////////////////////////////////////////////////////////// */
